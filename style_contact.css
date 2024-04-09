@@ -1,0 +1,147 @@
+img{
+    max-width: 100%;
+    height: auto;
+  } 
+  
+  body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+  }
+  
+  ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3d2314;
+  }
+  ul.topnav li {float: left;}
+  
+  ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul.topnav li a:hover:not(.active) {background-color: #111;}
+  
+  ul.topnav li a.active {background-color: #751907;}
+  
+  ul.topnav li.right {float: right;}
+  
+  @media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {
+      display: inline;
+      float: none;}
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #d3ad7f;
+    color:#3d2314;
+  } 
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: #56301a;
+  }
+  li.dropdown {
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #56301a;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  footer{
+    color: white;
+    background-color:#d3ad7f;
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-areas: 
+    "logo adresa socialmedia";
+    grid-template-columns: 0.5fr 1fr 0.25fr;
+  }
+  #logo > h4{
+    color:rgb(220, 119, 18);
+  }
+  footer > #logo{
+    grid-area: logo;
+  }
+  footer > #adresa{
+    grid-area: adresa;
+  }
+  footer > #socialmedia{
+    grid-area: socialmedia;
+  }
+  footer::after{
+    content: "page made by Oana Cochiorca";
+  }
+  #socialmedia > a:hover{
+    opacity: 0.4;
+  }
+  #adresa > h3,h4{
+    color:rgb(220, 119, 18);
+  }
+  #adresa > h3{
+    font-size: 2em;
+  }
+  
+  #container {
+    min-height: 80vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  form {
+    padding: 50px; 
+    max-width: 500px; 
+    width: 100%;
+    margin: 50px;
+  }
+  
+  input {
+    width: 100%; 
+    padding: 10px; 
+  }
+  .submit-button {
+    margin-top: 10px;
+    padding: 12px 24px; 
+    font-size: 15px; 
+    border-radius: 10px; 
+  }
+  
+  
+
+
